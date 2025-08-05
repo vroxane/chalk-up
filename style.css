@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+#templates {
+    display: none;
+}
+#printable-area {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+[class^="hold-"] {
+    display: none;
+}
+
+[data-id="hold-jug"] .hold-jug,
+[data-id="hold-horn"] .hold-horn,
+[data-id="hold-flake"] .hold-flake,
+[data-id="hold-crimp"] .hold-crimp,
+[data-id="hold-pinch"] .hold-pinch,
+[data-id="hold-slopper"] .hold-slopper,
+[data-id="hold-crack"] .hold-crack,
+[data-id="hold-pocket"] .hold-pocket {
+    display: block;
+}
