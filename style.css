@@ -1,12 +1,32 @@
+html,
+body {
+    width: 190mm;
+    height: 277mm;
+}
+
 body {
     font-family: Arial, sans-serif;
     background: #f9f9f9;
     margin: 0;
     padding: 0;
 }
+
+#printable-area {
+    line-height: 0;
+
+    .hold {
+        page-break-inside: avoid;
+        break-inside: avoid;
+        page-break-after: auto;
+        width: 63mm;
+        height: 41mm;
+    }
+}
+
 #templates {
     display: none;
 }
+
 #printable-area {
     display: flex;
     flex-wrap: wrap;
@@ -16,13 +36,25 @@ body {
     display: none;
 }
 
-[data-id="hold-jug"] .hold-jug,
-[data-id="hold-horn"] .hold-horn,
-[data-id="hold-flake"] .hold-flake,
-[data-id="hold-crimp"] .hold-crimp,
-[data-id="hold-pinch"] .hold-pinch,
-[data-id="hold-slopper"] .hold-slopper,
-[data-id="hold-crack"] .hold-crack,
-[data-id="hold-pocket"] .hold-pocket {
+[data-hold="jug"] .hold-jug,
+[data-hold="horn"] .hold-horn,
+[data-hold="flake"] .hold-flake,
+[data-hold="crimp"] .hold-crimp,
+[data-hold="pinch"] .hold-pinch,
+[data-hold="slopper"] .hold-slopper,
+[data-hold="crack"] .hold-crack,
+[data-hold="pocket"] .hold-pocket {
     display: block;
+}
+[data-profile="vertical"] .profile-color { fill: #63d967; }
+[data-profile="dièdre"] .profile-color { fill: #2fb6ff; }
+[data-profile="toit"] .profile-color { fill: #ff45ab; }
+[data-profile="dalle"] .profile-color { fill: #b06fff; }
+[data-profile="dévers"] .profile-color { fill: #ff5e5e; }
+[data-profile="cheminée"] .profile-color { fill: #ffaf47; }
+
+
+@page {
+    size: A4;
+    margin: 10mm;
 }

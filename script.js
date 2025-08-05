@@ -1407,7 +1407,8 @@ holdCards.forEach(entry => {
     clone.querySelector('.name').textContent = entry.Nom;
     clone.querySelector('.diff').textContent = entry.Difficulté;
     clone.querySelector('.clip').textContent = entry.Clip;
-    clone.setAttribute('data-id', 'hold-' + entry.Nom.toLowerCase());
+    clone.setAttribute('data-hold', entry.Nom.toLowerCase());
+    clone.setAttribute('data-profile', entry.Profil.toLowerCase());
 
     printableArea.appendChild(clone);
 });
