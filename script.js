@@ -1412,3 +1412,29 @@ holdCards.forEach(entry => {
 
     printableArea.appendChild(clone);
 });
+
+movementCards.forEach(entry => {
+    const clone = movementTemplate.cloneNode(true);
+
+    if(entry.Nom.length > 20) {
+        const text = entry.Nom.split(' ');
+        const wordCount = text.length;
+        const line1 = text.slice(0, Math.floor(wordCount/3));
+        const line2 = text.slice(Math.floor(wordCount/3), 2*Math.floor(wordCount/3));
+        const line3 = text.slice(2*Math.floor(wordCount/3), 99);
+
+
+        clone.querySelector('.name').textContent = line1.join(' ');
+        clone.querySelector('.name_2').textContent = line2.length ? line2.join(' ') : "";
+        clone.querySelector('.name_3').textContent = line3.length ? line3.join(' ') : "";
+    } else {
+        clone.querySelector('.name').textContent = "";
+        clone.querySelector('.name_2').textContent = entry.Nom;
+        clone.querySelector('.name_3').textContent = "";
+    }
+
+    clone.setAttribute('data-hold', entry.Prise.toLowerCase());
+    clone.setAttribute('data-profile', entry.Profil.toLowerCase());
+
+    printableArea.appendChild(clone);
+});
