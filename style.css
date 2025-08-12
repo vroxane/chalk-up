@@ -3,11 +3,11 @@ body {
     width: 190mm;
     height: 277mm;
     --card: #3C94FF;
-    --vertical: #63d967;
+    --vertical: #85cb88;
     --dihedral: #74ceff;
-    --roof: #ff47ac;
-    --slab: #6734ff;
-    --overhang: #eb1313;
+    --roof: #ff91ce;
+    --slab: #c0abff;
+    --overhang: #ff6e6e;
     --chimney: #ffb247;
 
 }
@@ -67,6 +67,7 @@ body {
     .profile-color {
         fill: var(--vertical);
     }
+
     .profile-name {
         color: var(--vertical);
     }
@@ -76,6 +77,7 @@ body {
     .profile-color {
         fill: var(--dihedral);
     }
+
     .profile-name {
         color: var(--dihedral);
     }
@@ -85,6 +87,7 @@ body {
     .profile-color {
         fill: var(--roof)
     }
+
     .profile-name {
         color: var(--roof)
     }
@@ -94,6 +97,7 @@ body {
     .profile-color {
         fill: var(--slab)
     }
+
     .profile-name {
         color: var(--slab)
     }
@@ -103,6 +107,7 @@ body {
     .profile-color {
         fill: var(--overhang)
     }
+
     .profile-name {
         color: var(--overhang)
     }
@@ -112,6 +117,7 @@ body {
     .profile-color {
         fill: var(--chimney)
     }
+
     .profile-name {
         color: var(--chimney)
     }
