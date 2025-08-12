@@ -32,26 +32,38 @@ body {
     flex-wrap: wrap;
 }
 
+.card-stroke {
+    stroke: #3C94FF;
+}
+
+.card-fill {
+    fill: #3C94FF;
+}
+
 [class^="hold-"] {
     display: none;
 }
 
 [data-hold="jug"] .hold-jug,
-[data-hold="horn"] .hold-horn,
 [data-hold="flake"] .hold-flake,
+[data-hold="horn"] .hold-horn,
+[data-hold="pocket"] .hold-pocket,
 [data-hold="crimp"] .hold-crimp,
-[data-hold="pinch"] .hold-pinch,
 [data-hold="slopper"] .hold-slopper,
-[data-hold="crack"] .hold-crack,
-[data-hold="pocket"] .hold-pocket {
+[data-hold="tufa"] .hold-tufa,
+[data-hold="crack"] .hold-crack
+ {
     display: block;
 }
-[data-profile="vertical"] .profile-color { fill: #63d967; }
-[data-profile="dièdre"] .profile-color { fill: #2fb6ff; }
-[data-profile="toit"] .profile-color { fill: #ff45ab; }
-[data-profile="dalle"] .profile-color { fill: #b06fff; }
-[data-profile="dévers"] .profile-color { fill: #ff5e5e; }
-[data-profile="cheminée"] .profile-color { fill: #ffaf47; }
+[data-profile="vertical"] {
+     .profile-color { fill: #63d967; }
+     .profile-name { color: #63d967; }
+}
+[data-profile="dièdre"] .profile-color { fill: #74ceff; }
+[data-profile="toit"] .profile-color { fill: #ff47ac; }
+[data-profile="dalle"] .profile-color { fill: #6734ff; }
+[data-profile="dévers"] .profile-color { fill: #eb1313; }
+[data-profile="cheminée"] .profile-color { fill: #ffb247; }
 
 
 @page {

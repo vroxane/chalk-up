@@ -1,0 +1,22 @@
+<svg width="239" height="155" viewBox="0 0 239 155" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_46_3)">
+<rect width="238.14" height="154.98" transform="translate(238.14 154.98) rotate(-180)" fill="white"/>
+<rect x="232.14" y="149.42" width="226" height="143" rx="10" transform="rotate(-180 232.14 149.42)" stroke="#6FB0FF" stroke-width="10"/>
+<text transform="translate(84.56 12.42) rotate(90)" fill="black" xml:space="preserve" style="white-space: pre" font-family="Jolly Lodger" font-size="14" letter-spacing="0em"><tspan x="28.0947" y="14.9971">This one sparks joy</tspan></text>
+<text transform="translate(69.56 12.42) rotate(90)" fill="black" xml:space="preserve" style="white-space: pre" font-family="Jolly Lodger" font-size="14" letter-spacing="0em"><tspan x="28.0947" y="14.9971">This one sparks joy</tspan></text>
+<text transform="translate(54.56 12.42) rotate(90)" fill="black" xml:space="preserve" style="white-space: pre" font-family="Jolly Lodger" font-size="14" letter-spacing="0em"><tspan x="28.0947" y="14.9971">This one sparks joy</tspan></text>
+<text transform="translate(200.56 31.42) rotate(-180)" fill="#FFC800" xml:space="preserve" style="white-space: pre" font-family="Jolly Lodger" font-size="11" letter-spacing="0.06em"><tspan x="0.392696" y="10.4263">OVERHANG</tspan></text>
+<circle cx="213.56" cy="25.42" r="10" transform="rotate(90 213.56 25.42)" fill="#FFC800"/>
+<mask id="mask0_46_3" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="203" y="15" width="21" height="21">
+<circle cx="213.56" cy="25.42" r="10" transform="rotate(90 213.56 25.42)" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_46_3)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M239.32 71.9113L239.32 41.0341C239.218 41.0341 238.703 40.9849 236.464 40.4921C234.795 40.1249 232.017 39.3297 230.218 38.8148C230.088 38.7775 229.963 38.7417 229.844 38.7076C228.683 38.3758 227.821 38.1092 227.051 37.8714C226.403 37.6711 225.821 37.4912 225.183 37.3099C223.409 36.8063 222.007 36.2966 220.429 35.7226C220.074 35.5933 219.709 35.4607 219.329 35.3241C217.336 34.6075 215.55 33.8149 214.234 33.2307C213.602 32.95 213.078 32.7174 212.692 32.5645C211.945 32.269 211.649 31.6939 211.415 30.9276C211.038 29.686 211.379 28.6387 211.511 28.2309L211.516 28.2157C211.756 27.4782 212.494 27.1559 213.1 26.8907C213.133 26.876 213.167 26.8615 213.199 26.8471C213.267 26.8173 213.406 26.7556 213.406 26.7556C213.406 26.7556 214.552 26.3451 215.293 25.9463C216.142 25.4901 216.941 24.7414 217.06 24.5428C217.179 24.3442 217.59 23.7347 217.59 23.3148C217.59 22.9773 217.555 22.6071 217.426 22.2061C217.298 21.8051 217.042 21.5099 216.704 21.3086C215.724 20.7237 214.712 20.4609 213.873 20.243C213.574 20.1651 213.296 20.0929 213.049 20.0138C212.878 19.9589 212.674 19.9 212.434 19.8307C211.401 19.5328 209.698 19.0416 207.061 17.8394C205.249 17.013 202.909 15.525 201.212 14.4464C200.913 14.2562 200.634 14.0788 200.381 13.9199C199.08 13.102 198.148 12.4761 197.435 11.9973C196.597 11.4349 196.062 11.0753 195.586 10.8458C195.405 10.7516 195.197 10.6467 194.966 10.5301C193.674 9.87772 191.657 8.85969 189.603 7.29758C189.415 7.10571 189.27 6.93807 189.147 6.78209L189.147 71.9113C189.147 73.8491 190.729 75.42 192.68 75.42L235.787 75.42C237.738 75.42 239.32 73.8491 239.32 71.9113Z" fill="#3C94FF"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_46_3">
+<rect width="238.14" height="154.98" fill="white" transform="translate(238.14 154.98) rotate(-180)"/>
+</clipPath>
+</defs>
+</svg>

@@ -124,7 +124,7 @@ const cards = [
     "Nom": "Récupère un dé immédiatement",
     "Étiquettes": "Gestion de dés",
     "Bonus mouvement parfait": "",
-    "Prise": "Pinch",
+    "Prise": "Tufa",
     "Profil": "Vertical",
     "Type": "Mouvement",
     "Clip": "",
@@ -136,7 +136,7 @@ const cards = [
     "Nom": "Double le résultat d’un dé",
     "Étiquettes": "Gestion de dés",
     "Bonus mouvement parfait": "",
-    "Prise": "Pinch",
+    "Prise": "Tufa",
     "Profil": "Toit",
     "Type": "Mouvement",
     "Clip": "",
@@ -280,7 +280,7 @@ const cards = [
     "Nom": "Tu ne peux pas clipper ce tour ci",
     "Étiquettes": "#pute, Déplacement",
     "Bonus mouvement parfait": "",
-    "Prise": "Pinch",
+    "Prise": "Tufa",
     "Profil": "Dévers",
     "Type": "Mouvement",
     "Clip": "",
@@ -292,7 +292,7 @@ const cards = [
     "Nom": "Nouvelle beta",
     "Étiquettes": "Déplacement",
     "Bonus mouvement parfait": "",
-    "Prise": "Pinch",
+    "Prise": "Tufa",
     "Profil": "Dièdre",
     "Type": "Mouvement",
     "Clip": "",
@@ -436,7 +436,7 @@ const cards = [
     "Nom": "Pioche 2 cartes",
     "Étiquettes": "Combo",
     "Bonus mouvement parfait": "",
-    "Prise": "Pinch",
+    "Prise": "Tufa",
     "Profil": "Dalle",
     "Type": "Mouvement",
     "Clip": "",
@@ -592,7 +592,7 @@ const cards = [
     "Nom": "En cas de réussite, un autre joueur descend d’une prise",
     "Étiquettes": "#pute, Chaos",
     "Bonus mouvement parfait": "",
-    "Prise": "Pinch",
+    "Prise": "Tufa",
     "Profil": "Cheminée",
     "Type": "Mouvement",
     "Clip": "",
@@ -985,10 +985,10 @@ const cards = [
   },
   {
     "Identifiant": 64,
-    "Nom": "Pinch",
+    "Nom": "Tufa",
     "Étiquettes": "",
     "Bonus mouvement parfait": "",
-    "Prise": "Pinch",
+    "Prise": "Tufa",
     "Profil": "Vertical",
     "Type": "Prise",
     "Clip": 3,
@@ -997,10 +997,10 @@ const cards = [
   },
   {
     "Identifiant": 63,
-    "Nom": "Pinch",
+    "Nom": "Tufa",
     "Étiquettes": "",
     "Bonus mouvement parfait": "",
-    "Prise": "Pinch",
+    "Prise": "Tufa",
     "Profil": "Toit",
     "Type": "Prise",
     "Clip": 2,
@@ -1009,10 +1009,10 @@ const cards = [
   },
   {
     "Identifiant": 62,
-    "Nom": "Pinch",
+    "Nom": "Tufa",
     "Étiquettes": "",
     "Bonus mouvement parfait": "",
-    "Prise": "Pinch",
+    "Prise": "Tufa",
     "Profil": "Dévers",
     "Type": "Prise",
     "Clip": 2,
@@ -1021,10 +1021,10 @@ const cards = [
   },
   {
     "Identifiant": 91,
-    "Nom": "Pinch",
+    "Nom": "Tufa",
     "Étiquettes": "",
     "Bonus mouvement parfait": "",
-    "Prise": "Pinch",
+    "Prise": "Tufa",
     "Profil": "Dalle",
     "Type": "Prise",
     "Clip": 5,
@@ -1033,10 +1033,10 @@ const cards = [
   },
   {
     "Identifiant": 92,
-    "Nom": "Pinch",
+    "Nom": "Tufa",
     "Étiquettes": "",
     "Bonus mouvement parfait": "",
-    "Prise": "Pinch",
+    "Prise": "Tufa",
     "Profil": "Cheminée",
     "Type": "Prise",
     "Clip": 4,
@@ -1045,10 +1045,10 @@ const cards = [
   },
   {
     "Identifiant": 93,
-    "Nom": "Pinch",
+    "Nom": "Tufa",
     "Étiquettes": "",
     "Bonus mouvement parfait": "",
-    "Prise": "Pinch",
+    "Prise": "Tufa",
     "Profil": "Dièdre",
     "Type": "Prise",
     "Clip": 5,
@@ -1409,6 +1409,7 @@ holdCards.forEach(entry => {
     clone.querySelector('.clip').textContent = entry.Clip;
     clone.setAttribute('data-hold', entry.Nom.toLowerCase());
     clone.setAttribute('data-profile', entry.Profil.toLowerCase());
+    clone.querySelector('.profile-name').textContent = entry.Profil.toUpperCase();
 
     printableArea.appendChild(clone);
 });
@@ -1435,6 +1436,8 @@ movementCards.forEach(entry => {
 
     clone.setAttribute('data-hold', entry.Prise.toLowerCase());
     clone.setAttribute('data-profile', entry.Profil.toLowerCase());
+
+    clone.querySelector('.profile-name').textContent = entry.Profil;
 
     printableArea.appendChild(clone);
 });
