@@ -2,6 +2,14 @@ html,
 body {
     width: 190mm;
     height: 277mm;
+    --card: #3C94FF;
+    --vertical: #63d967;
+    --dihedral: #74ceff;
+    --roof: #ff47ac;
+    --slab: #6734ff;
+    --overhang: #eb1313;
+    --chimney: #ffb247;
+
 }
 
 body {
@@ -33,11 +41,11 @@ body {
 }
 
 .card-stroke {
-    stroke: #3C94FF;
+    stroke: var(--card);
 }
 
 .card-fill {
-    fill: #3C94FF;
+    fill: var(--card);
 }
 
 [class^="hold-"] {
@@ -51,19 +59,63 @@ body {
 [data-hold="crimp"] .hold-crimp,
 [data-hold="slopper"] .hold-slopper,
 [data-hold="tufa"] .hold-tufa,
-[data-hold="crack"] .hold-crack
- {
+[data-hold="crack"] .hold-crack {
     display: block;
 }
+
 [data-profile="vertical"] {
-     .profile-color { fill: #63d967; }
-     .profile-name { color: #63d967; }
+    .profile-color {
+        fill: var(--vertical);
+    }
+    .profile-name {
+        color: var(--vertical);
+    }
 }
-[data-profile="dièdre"] .profile-color { fill: #74ceff; }
-[data-profile="toit"] .profile-color { fill: #ff47ac; }
-[data-profile="dalle"] .profile-color { fill: #6734ff; }
-[data-profile="dévers"] .profile-color { fill: #eb1313; }
-[data-profile="cheminée"] .profile-color { fill: #ffb247; }
+
+[data-profile="dihedral"] {
+    .profile-color {
+        fill: var(--dihedral);
+    }
+    .profile-name {
+        color: var(--dihedral);
+    }
+}
+
+[data-profile="roof"] {
+    .profile-color {
+        fill: var(--roof)
+    }
+    .profile-name {
+        color: var(--roof)
+    }
+}
+
+[data-profile="slab"] {
+    .profile-color {
+        fill: var(--slab)
+    }
+    .profile-name {
+        color: var(--slab)
+    }
+}
+
+[data-profile="overhang"] {
+    .profile-color {
+        fill: var(--overhang)
+    }
+    .profile-name {
+        color: var(--overhang)
+    }
+}
+
+[data-profile="chimney"] {
+    .profile-color {
+        fill: var(--chimney)
+    }
+    .profile-name {
+        color: var(--chimney)
+    }
+}
 
 
 @page {
